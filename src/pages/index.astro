@@ -343,6 +343,10 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 		transition: transform 0.3s ease;
 		position: relative;
 		overflow: hidden;
+		min-height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 
 	.feature-card:hover {
@@ -355,7 +359,8 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 		object-fit: cover;
 		border-radius: 10px;
 		margin-bottom: 1.5rem;
-		display: block;
+		display: block !important;
+		flex-shrink: 0;
 	}
 
 	.feature-card h3 {
@@ -626,26 +631,40 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 			grid-template-columns: 1fr;
 			gap: 1.5rem;
 			margin-top: 2rem;
+			display: flex;
+			flex-direction: column;
 		}
 
 		.feature-card {
 			padding: 1.5rem;
 			margin-bottom: 1rem;
+			min-height: 350px;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: none;
 		}
 
 		.feature-card img {
-			height: 180px;
-			width: 100%;
-			object-fit: cover;
-			object-position: center;
-			border-radius: 10px;
-			margin-bottom: 1rem;
-			display: block;
+			height: 180px !important;
+			width: 100% !important;
+			object-fit: cover !important;
+			object-position: center !important;
+			border-radius: 10px !important;
+			margin-bottom: 1rem !important;
+			display: block !important;
+			flex-shrink: 0 !important;
+			background-color: #f0f0f0;
 		}
 
 		.feature-card h3 {
 			font-size: 1.2rem;
 			margin-top: 1rem;
+			flex-shrink: 0;
+		}
+
+		.feature-card p {
+			flex-grow: 1;
 		}
 
 		.rigs-comparison {
@@ -741,16 +760,21 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 		.feature-card {
 			padding: 1.2rem;
 			margin-bottom: 1rem;
+			min-height: 320px;
+			display: flex;
+			flex-direction: column;
 		}
 
 		.feature-card img {
-			height: 160px;
-			width: 100%;
-			object-fit: cover;
-			object-position: center;
-			border-radius: 8px;
-			margin-bottom: 1rem;
-			display: block;
+			height: 160px !important;
+			width: 100% !important;
+			object-fit: cover !important;
+			object-position: center !important;
+			border-radius: 8px !important;
+			margin-bottom: 1rem !important;
+			display: block !important;
+			flex-shrink: 0 !important;
+			background-color: #f0f0f0;
 		}
 
 		.feature-card h3 {
