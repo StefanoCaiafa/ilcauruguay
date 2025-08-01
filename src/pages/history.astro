@@ -123,6 +123,35 @@ import Layout from '../layouts/BlogPost.astro';
 			Hoy, la Asociación Uruguaya de Laser continúa siendo un referente en la vela nacional. Nuestro compromiso sigue siendo el mismo: formar navegantes, promover la competencia sana y mantener vivo el espíritu de superación que nos ha caracterizado durante décadas.
 		</p>
 
+		<div class="historical-blogs">
+			<h3>📝 Archivo Digital - Blogs Históricos</h3>
+			<p>
+				Parte importante de nuestra historia está documentada en los blogs que mantuvieron viva la información de la clase durante años, preservando memorias, resultados y momentos únicos:
+			</p>
+			
+			<div class="blog-cards">
+				<div class="blog-card">
+					<h4>🌐 Uruguay Laser Blog</h4>
+					<p>Archivo histórico con décadas de información, resultados de regatas, noticias internacionales y crónicas de competencias que marcaron la historia de la clase en Uruguay.</p>
+					<a href="https://urulaser.blogspot.com/" target="_blank" class="blog-link">
+						📖 Visitar Archivo Histórico
+					</a>
+				</div>
+
+				<div class="blog-card">
+					<h4>🌐 Laser Uruguay</h4>
+					<p>Registro digital de la evolución de la clase, con cobertura de eventos nacionales e internacionales, entrevistas y material fotográfico único de nuestros navegantes.</p>
+					<a href="https://laseruruguay.blogspot.com/" target="_blank" class="blog-link">
+						📖 Explorar Contenido Histórico
+					</a>
+				</div>
+			</div>
+
+			<p class="digital-heritage">
+				<em>Estos blogs representan el patrimonio digital de nuestra clase, documentando momentos únicos y preservando la memoria colectiva de generaciones de navegantes uruguayos.</em>
+			</p>
+		</div>
+
 		<div class="final-image">
 			<img src={Image8.src} alt="La tradición continúa" style="width: 100%; border-radius: 8px; margin: 1.5em 0;" />
 		</div>
@@ -206,6 +235,10 @@ import Layout from '../layouts/BlogPost.astro';
 		.international-achievements {
 			grid-template-columns: 1fr;
 		}
+
+		.blog-cards {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	ul {
@@ -249,5 +282,61 @@ import Layout from '../layouts/BlogPost.astro';
 	.achievement-card li {
 		margin: 0.8em 0;
 		line-height: 1.4;
+	}
+
+	.historical-blogs {
+		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+		padding: 2em;
+		border-radius: 15px;
+		margin: 2em 0;
+		border-left: 4px solid #6c757d;
+	}
+
+	.blog-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5em;
+		margin: 1.5em 0;
+	}
+
+	.blog-card {
+		background: white;
+		padding: 1.5em;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+		border-top: 3px solid #007bff;
+	}
+
+	.blog-card h4 {
+		color: #007bff;
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+
+	.blog-link {
+		display: inline-block;
+		background: #007bff;
+		color: white;
+		padding: 0.6em 1.2em;
+		border-radius: 6px;
+		text-decoration: none;
+		margin-top: 1em;
+		transition: background 0.3s ease;
+		font-weight: 500;
+	}
+
+	.blog-link:hover {
+		background: #0056b3;
+		transform: translateY(-1px);
+	}
+
+	.digital-heritage {
+		text-align: center;
+		font-style: italic;
+		color: #6c757d;
+		margin-top: 1.5em;
+		padding: 1em;
+		background: rgba(255,255,255,0.7);
+		border-radius: 8px;
 	}
 </style>

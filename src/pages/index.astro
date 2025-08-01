@@ -3,47 +3,589 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+// Import hero and feature images
+import HeroImage1 from '../assets/about/2e255c2c-3ef9-4ae9-8249-04a810ad1811.jpg';
+import HeroImage2 from '../assets/about/11f14203-4810-4a20-ab41-e6bb808232ea.jpg';
+import FeatureImage1 from '../assets/about/26c8540f-f1ae-4960-9ac4-feec9f7d224b.jpg';
+import FeatureImage2 from '../assets/about/46d52cf9-0afc-4b81-a7eb-017e36aff366.jpg';
+import FeatureImage3 from '../assets/about/87a1facc-2655-44a5-b97a-2ace81fe2afd.jpg';
+import FeatureImage4 from '../assets/about/17784125-4f7e-4d9e-9456-c43650726ba8.jpg';
+import FeatureImage5 from '../assets/about/36759669-8ed5-48dd-a532-9f58ca1d8dad.jpg';
+import ActionImage from '../assets/about/d2709a7c-2646-48cd-9603-b2c2a43a1245.jpg';
+import YouthImage from '../assets/about/youth-southamerican-championship-2022.jpeg';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1>⛵ Descubre la Pasión por la Vela ILCA</h1>
+						<p class="hero-subtitle">
+							Únete a la clase de vela más popular del mundo. Experimenta la emoción, 
+							la técnica y el compañerismo que solo la vela ILCA puede ofrecer.
+						</p>
+						<div class="hero-buttons">
+							<a href="/join" class="btn-primary">🚀 Hazte Socio</a>
+							<a href="/about" class="btn-secondary">📖 Conoce Más</a>
+						</div>
+					</div>
+					<div class="hero-images">
+						<img src={HeroImage1.src} alt="Navegando en ILCA" class="hero-img-main" />
+						<img src={HeroImage2.src} alt="Competencia ILCA" class="hero-img-secondary" />
+					</div>
+				</div>
+			</section>
+
+			<!-- Why ILCA Section -->
+			<section class="why-ilca">
+				<div class="container">
+					<h2>🏆 ¿Por qué elegir ILCA?</h2>
+					<p class="section-subtitle">
+						La clase ILCA es reconocida mundialmente como la mejor opción para navegantes de todos los niveles
+					</p>
+					
+					<div class="features-grid">
+						<div class="feature-card">
+							<img src={FeatureImage1.src} alt="Simplicidad ILCA" />
+							<h3>🎯 Simplicidad Perfecta</h3>
+							<p>Un solo navegante, una vela, pura técnica. Sin complicaciones, solo tú y el viento.</p>
+						</div>
+
+						<div class="feature-card">
+							<img src={FeatureImage2.src} alt="Competencia mundial ILCA" />
+							<h3>🌍 Clase Olímpica Mundial</h3>
+							<p>Compite en la misma clase que los campeones olímpicos. Desde local hasta mundial.</p>
+						</div>
+
+						<div class="feature-card">
+							<img src={FeatureImage3.src} alt="Accesibilidad ILCA" />
+							<h3>💰 Accesible para Todos</h3>
+							<p>Costos controlados, reglas estrictas de clase. La competencia se decide por habilidad, no por dinero.</p>
+						</div>
+
+						<div class="feature-card">
+							<img src={FeatureImage4.src} alt="Técnica en ILCA" />
+							<h3>⚡ Desarrollo Técnico Total</h3>
+							<p>Mejora tu técnica de navegación, táctica y condición física en cada salida.</p>
+						</div>
+
+						<div class="feature-card">
+							<img src={FeatureImage5.src} alt="Comunidad ILCA" />
+							<h3>🤝 Comunidad Global</h3>
+							<p>Forma parte de una familia mundial de más de 200,000 navegantes activos.</p>
+						</div>
+
+						<div class="feature-card">
+							<img src={YouthImage.src} alt="Jóvenes en ILCA" />
+							<h3>👥 Para Todas las Edades</h3>
+							<p>Desde los 12 años hasta masters, tres aparejos diferentes para cada navegante.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Three Rig System -->
+			<section class="rig-system">
+				<div class="container">
+					<h2>🎯 Un Barco, Tres Posibilidades</h2>
+					<p class="section-subtitle">El sistema de aparejos ILCA se adapta a tu peso y experiencia</p>
+					
+					<div class="rigs-comparison">
+						<div class="rig-card ilca4">
+							<h3>ILCA 4</h3>
+							<div class="rig-specs">
+								<span class="weight">45-65 kg</span>
+								<span class="sail-area">4.70 m²</span>
+							</div>
+							<p>Perfecto para jóvenes navegantes y adultos ligeros. Ideal para aprender y perfeccionar técnica.</p>
+						</div>
+
+						<div class="rig-card ilca6">
+							<h3>ILCA 6</h3>
+							<div class="rig-specs">
+								<span class="weight">55-75 kg</span>
+								<span class="sail-area">5.76 m²</span>
+							</div>
+							<p>El aparejo más popular. Perfecto para mujeres, jóvenes y navegantes medianos. Clase olímpica femenina.</p>
+						</div>
+
+						<div class="rig-card ilca7">
+							<h3>ILCA 7</h3>
+							<div class="rig-specs">
+								<span class="weight">70+ kg</span>
+								<span class="sail-area">7.06 m²</span>
+							</div>
+							<p>Para navegantes pesados y experimentados. Clase olímpica masculina. Máxima potencia y adrenalina.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Success Stories -->
+			<section class="success-stories">
+				<div class="container">
+					<h2>🏅 Historias de Éxito Uruguayas</h2>
+					<div class="stories-grid">
+						<div class="story-card">
+							<h3>Alejandro Foglia</h3>
+							<p class="achievement">🥇 Campeón Mundial Juvenil 2003</p>
+							<p class="achievement">🇺🇾 8° puesto Olímpico Londres 2012</p>
+							<p class="story-text">"La ILCA me dio todo: disciplina, técnica y la oportunidad de representar a Uruguay en 4 Olimpíadas."</p>
+						</div>
+
+						<div class="story-card featured">
+							<h3>Dolores "Lola" Moreira</h3>
+							<p class="achievement">👑 Campeona Mundial Juvenil 2016</p>
+							<p class="achievement">🏅 3 participaciones olímpicas</p>
+							<p class="story-text">"Empecé en ILCA 6 a los 12 años. Hoy represento a Uruguay en el mundo gracias a esta increíble clase."</p>
+						</div>
+
+						<div class="story-card">
+							<h3>Andrea Foglia</h3>
+							<p class="achievement">🏅 5° Mundial Juvenil 2007</p>
+							<p class="achievement">🥉 Bronce Sudamericano 2008</p>
+							<p class="story-text">"La ILCA desarrolló mi pasión por la competencia y me enseñó a superar mis límites cada día."</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section class="cta-section">
+				<div class="cta-content">
+					<img src={ActionImage.src} alt="Únete a ILCA Uruguay" class="cta-image" />
+					<div class="cta-text">
+						<h2>🚤 ¡Tu Aventura Comienza Hoy!</h2>
+						<p>
+							No importa si eres principiante o experimentado, joven o adulto. 
+							En ILCA Uruguay encontrarás tu lugar y desarrollarás todo tu potencial náutico.
+						</p>
+						<div class="cta-benefits">
+							<div class="benefit">✅ Entrenamientos regulares</div>
+							<div class="benefit">✅ Competencias para todos los niveles</div>
+							<div class="benefit">✅ Comunidad apasionada y solidaria</div>
+							<div class="benefit">✅ Equipamiento y asesoramiento técnico</div>
+						</div>
+						<div class="cta-buttons">
+							<a href="/join" class="btn-primary large">🏁 Empezar Ahora</a>
+							<a href="https://chat.whatsapp.com/6HRTR7BcqkpCLZAb8oTZEv" target="_blank" class="btn-whatsapp">
+								💬 WhatsApp
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	main {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	/* Hero Section */
+	.hero {
+		background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+		color: white;
+		padding: 4rem 2rem;
+		min-height: 80vh;
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hero-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.btn-primary, .btn-secondary {
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: transform 0.3s ease;
+		display: inline-block;
+	}
+
+	.btn-primary {
+		background: white;
+		color: #007bff;
+	}
+
+	.btn-secondary {
+		background: rgba(255,255,255,0.2);
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-primary:hover, .btn-secondary:hover {
+		transform: translateY(-2px);
+	}
+
+	.hero-images {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 1rem;
+		height: 400px;
+	}
+
+	.hero-img-main {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+	}
+
+	.hero-img-secondary {
+		width: 100%;
+		height: 48%;
+		object-fit: cover;
+		border-radius: 10px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+	}
+
+	/* Why ILCA Section */
+	.why-ilca {
+		padding: 5rem 2rem;
+		background: #f8f9fa;
+	}
+
+	.why-ilca h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.section-subtitle {
+		text-align: center;
+		font-size: 1.2rem;
+		color: #666;
+		margin-bottom: 3rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.feature-card {
+		background: white;
+		border-radius: 15px;
+		padding: 2rem;
+		text-align: center;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		transition: transform 0.3s ease;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.feature-card img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 10px;
+		margin-bottom: 1.5rem;
+	}
+
+	.feature-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		color: #007bff;
+	}
+
+	/* Rig System */
+	.rig-system {
+		padding: 5rem 2rem;
+		background: white;
+	}
+
+	.rig-system h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.rigs-comparison {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.rig-card {
+		text-align: center;
+		padding: 2rem;
+		border-radius: 15px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	}
+
+	.ilca4 {
+		background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+		color: white;
+	}
+
+	.ilca6 {
+		background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+		color: white;
+	}
+
+	.ilca7 {
+		background: linear-gradient(135deg, #dc3545 0%, #e83e8c 100%);
+		color: white;
+	}
+
+	.rig-card h3 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.rig-specs {
+		display: flex;
+		justify-content: space-around;
+		margin: 1rem 0;
+		font-weight: bold;
+	}
+
+	/* Success Stories */
+	.success-stories {
+		padding: 5rem 2rem;
+		background: #f8f9fa;
+	}
+
+	.success-stories h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #333;
+	}
+
+	.stories-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.story-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 15px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	}
+
+	.story-card.featured {
+		background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+		color: white;
+		transform: scale(1.05);
+	}
+
+	.story-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: #007bff;
+	}
+
+	.story-card.featured h3 {
+		color: white;
+	}
+
+	.achievement {
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+		color: #28a745;
+	}
+
+	.story-card.featured .achievement {
+		color: #ffd700;
+	}
+
+	.story-text {
+		font-style: italic;
+		margin-top: 1rem;
+		line-height: 1.6;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		padding: 5rem 2rem;
+		background: white;
+	}
+
+	.cta-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+
+	.cta-image {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 15px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+	}
+
+	.cta-text h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.cta-benefits {
+		margin: 2rem 0;
+		display: grid;
+		gap: 0.5rem;
+	}
+
+	.benefit {
+		font-weight: 500;
+		color: #28a745;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.btn-primary.large {
+		padding: 1.2rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-whatsapp {
+		background: #25D366;
+		color: white;
+		padding: 1.2rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: transform 0.3s ease;
+	}
+
+	.btn-whatsapp:hover {
+		transform: translateY(-2px);
+		background: #1DA851;
+	}
+
+	/* Mobile Responsiveness */
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 1rem;
+		}
+
+		.hero {
+			padding: 3rem 1rem;
+		}
+
+		.why-ilca, .rig-system, .success-stories, .cta-section {
+			padding: 3rem 1rem;
+		}
+
+		.hero-content {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		.hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.hero-images {
+			grid-template-columns: 1fr;
+			height: 300px;
+		}
+
+		.hero-img-secondary {
+			height: 100%;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.rigs-comparison {
+			grid-template-columns: 1fr;
+		}
+
+		.stories-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.story-card.featured {
+			transform: none;
+		}
+
+		.cta-content {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.hero-buttons {
+			justify-content: center;
+		}
+	}
+</style>
