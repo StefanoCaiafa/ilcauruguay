@@ -371,6 +371,18 @@ import Layout from '../layouts/BlogPost.astro';
 		border-radius: 15px;
 		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contact-info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.contact-info h4 {
@@ -380,7 +392,6 @@ import Layout from '../layouts/BlogPost.astro';
 	}
 
 	.email-link {
-		display: inline-block;
 		background: #007bff;
 		color: white;
 		padding: 1em 2em;
@@ -388,8 +399,15 @@ import Layout from '../layouts/BlogPost.astro';
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.1em;
-		margin-bottom: 1em;
+		margin: 1em 0;
 		transition: transform 0.3s ease;
+		text-align: center;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		white-space: normal;
+		line-height: 1.2;
+		width: fit-content;
+		align-self: center;
 	}
 
 	.email-link:hover {
@@ -687,6 +705,50 @@ import Layout from '../layouts/BlogPost.astro';
 
 		.step:not(:last-child)::after {
 			display: none;
+		}
+
+		.email-link {
+			font-size: 1em;
+			padding: 0.9em 1.5em;
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			line-height: 1.2;
+		}
+
+		.contact-card {
+			padding: 1.5em 1em;
+		}
+
+		.contact-info h4 {
+			font-size: 1.1em;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.email-link {
+			font-size: 0.9em;
+			padding: 0.8em 1.2em;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.email-link {
+			font-size: 0.85em;
+			padding: 0.7em 1em;
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			hyphens: auto;
+		}
+
+		.contact-card {
+			padding: 1em 0.5em;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.email-link {
+			font-size: 0.75em;
+			padding: 0.6em 0.8em;
 		}
 	}
 </style>
