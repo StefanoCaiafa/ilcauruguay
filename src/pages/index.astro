@@ -137,15 +137,14 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 					<div class="stories-grid">
 						<div class="story-card">
 							<h3>Alejandro Foglia</h3>
-							<p class="achievement">🥇 Campeón Mundial Juvenil 2003</p>
-							<p class="achievement">🇺🇾 8° puesto Olímpico Londres 2012</p>
-							<p class="story-text">"La ILCA me dio todo: disciplina, técnica y la oportunidad de representar a Uruguay en 4 Olimpíadas."</p>
+							<p class="achievement">👑 8° puesto en Londres 2012</p>
+							<p class="achievement">🌍 22° puesto Mundial Laser 2008</p>
+							<p class="story-text">Mejor resultado olímpico uruguayo en vela y mejor resultado uruguayo en Australia.</p>
 						</div>
 
 						<div class="story-card featured">
 							<h3>Dolores "Lola" Moreira</h3>
-							<p class="achievement">👑 Campeona Mundial Juvenil 2016</p>
-							<p class="achievement">🏅 3 participaciones olímpicas</p>
+							<p class="achievement">🏅 Campeona del mundial de la WS en Nueva Zelanda 2016</p>
 							<p class="story-text">"Empecé en ILCA 6 a los 12 años. Hoy represento a Uruguay en el mundo gracias a esta increíble clase."</p>
 						</div>
 
@@ -535,7 +534,8 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 		}
 
 		.hero {
-			padding: 3rem 1rem;
+			padding: 2rem 1rem;
+			min-height: 100vh;
 		}
 
 		.why-ilca, .rig-system, .success-stories, .cta-section {
@@ -545,47 +545,181 @@ import YouthImage from '../assets/index/youth-southamerican-championship-2022.jp
 		.hero-content {
 			grid-template-columns: 1fr;
 			text-align: center;
+			gap: 2rem;
 		}
 
 		.hero h1 {
-			font-size: 2.2rem;
+			font-size: 2rem;
+			line-height: 1.3;
+			margin-bottom: 1rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+			line-height: 1.5;
+			margin-bottom: 1.5rem;
 		}
 
 		.hero-images {
 			grid-template-columns: 1fr;
-			height: 300px;
+			height: 250px;
+			gap: 0.5rem;
+		}
+
+		.hero-img-main {
+			height: 100%;
+			border-radius: 10px;
 		}
 
 		.hero-img-secondary {
-			height: 100%;
+			display: none;
+		}
+
+		.hero-buttons {
+			flex-direction: column;
+			gap: 0.8rem;
+			align-items: center;
+		}
+
+		.btn-primary, .btn-secondary {
+			width: 100%;
+			max-width: 280px;
+			padding: 0.9rem 1.5rem;
+			font-size: 0.95rem;
 		}
 
 		.features-grid {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.feature-card {
+			padding: 1.5rem;
+		}
+
+		.feature-card img {
+			height: 180px;
+		}
+
+		.feature-card h3 {
+			font-size: 1.2rem;
 		}
 
 		.rigs-comparison {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.rig-card {
+			padding: 1.5rem;
+		}
+
+		.rig-card h3 {
+			font-size: 1.6rem;
 		}
 
 		.stories-grid {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.story-card {
+			padding: 1.5rem;
 		}
 
 		.story-card.featured {
 			transform: none;
 		}
 
+		.story-card h3 {
+			font-size: 1.3rem;
+		}
+
 		.cta-content {
 			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.cta-image {
+			height: 250px;
+		}
+
+		.cta-text h2 {
+			font-size: 2rem;
 		}
 
 		.cta-buttons {
 			flex-direction: column;
+			gap: 0.8rem;
 		}
 
-		.hero-buttons {
-			justify-content: center;
+		.btn-primary.large {
+			width: 100%;
+			max-width: 280px;
+		}
+
+		.btn-whatsapp {
+			width: 100%;
+			max-width: 280px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero {
+			padding: 1.5rem 0.8rem;
+		}
+
+		.hero h1 {
+			font-size: 1.8rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.hero-images {
+			height: 200px;
+		}
+
+		.why-ilca, .rig-system, .success-stories, .cta-section {
+			padding: 2rem 0.8rem;
+		}
+
+		.why-ilca h2, .rig-system h2, .success-stories h2 {
+			font-size: 2rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.feature-card {
+			padding: 1.2rem;
+		}
+
+		.feature-card img {
+			height: 160px;
+		}
+
+		.rig-card {
+			padding: 1.2rem;
+		}
+
+		.rig-specs {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.story-card {
+			padding: 1.2rem;
+		}
+
+		.cta-image {
+			height: 200px;
+		}
+
+		.cta-text h2 {
+			font-size: 1.8rem;
 		}
 	}
 </style>
