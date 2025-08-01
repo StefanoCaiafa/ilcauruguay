@@ -1,0 +1,464 @@
+---
+import SponsorImage from '../assets/sponsors/87a1facc-2655-44a5-b97a-2ace81fe2afd.jpg';
+import ItauLogo from '../assets/sponsors/itau-logo.png';
+import LaRochePosayLogo from '../assets/sponsors/la-roche-posay-logo.png';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Nuestros Patrocinadores"
+	description="Conoce a las empresas que apoyan el desarrollo de la vela ILCA en Uruguay y hacen posible nuestros logros deportivos"
+	pubDate={new Date('August 1, 2025')}
+	heroImage={SponsorImage}
+>
+	<div class="sponsors-content">
+		<p class="intro">
+			El crecimiento y éxito de ILCA Uruguay es posible gracias al apoyo incondicional de nuestros patrocinadores, 
+			empresas comprometidas con el desarrollo del deporte náutico y la excelencia deportiva en nuestro país.
+		</p>
+
+		<div class="gratitude-section">
+			<h2>🤝 Nuestro Agradecimiento</h2>
+			<p>
+				Agradecemos profundamente a las empresas que confían en nosotros y nos acompañan en esta travesía. 
+				Su apoyo no solo impulsa a nuestros navegantes hacia nuevos horizontes, sino que también fortalece 
+				el desarrollo de la vela en Uruguay.
+			</p>
+		</div>
+
+		<div class="main-sponsors">
+			<h2>🏆 Patrocinadores Principales</h2>
+			
+			<div class="sponsor-card premium">
+				<div class="sponsor-logo">
+					<img src={ItauLogo.src} alt="Itaú Logo" />
+				</div>
+				<div class="sponsor-info">
+					<h3>Banco Itaú</h3>
+					<p class="sponsor-category">Patrocinador Principal</p>
+					<p class="sponsor-description">
+						Itaú ha sido un pilar fundamental en el desarrollo de la vela uruguaya, 
+						brindando servicios bancarios especializados para asociaciones sin fines de lucro, 
+						facilitando la gestión financiera de nuestra organización.
+					</p>
+					<div class="sponsor-benefits">
+						<span class="benefit">🏦 Cuenta Bancaria Gratuita</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="sponsor-card premium">
+				<div class="sponsor-logo">
+					<img src={LaRochePosayLogo.src} alt="La Roche-Posay Logo" />
+				</div>
+				<div class="sponsor-info">
+					<h3>La Roche-Posay</h3>
+					<p class="sponsor-category">Patrocinador Oficial</p>
+					<p class="sponsor-description">
+						La Roche-Posay, líder mundial en cuidado dermatológico, protege a nuestros 
+						navegantes del sol y los elementos, asegurando que puedan rendir al máximo 
+						en cada competencia mientras cuidan su salud.
+					</p>
+					<div class="sponsor-benefits">
+						<span class="benefit">☀️ Protección Solar</span>
+						<span class="benefit">🧴 Productos Especializados</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="partnership-impact">
+			<h2>📈 Impacto de Nuestras Alianzas</h2>
+			<div class="impact-grid">
+				<div class="impact-card">
+					<div class="impact-number">+80</div>
+					<div class="impact-label">Navegantes Beneficiados</div>
+				</div>
+				<div class="impact-card">
+					<div class="impact-number">3</div>
+					<div class="impact-label">Años de Trayectoria</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="testimonials">
+			<h2>💬 Testimonios</h2>
+			<div class="testimonials-grid">
+				<div class="testimonial-card">
+					<p class="testimonial-text">
+						"El apoyo de Itaú ha sido fundamental para nuestra asociación. Al brindarnos una cuenta bancaria 
+						gratuita, nos permite gestionar los recursos de manera eficiente y transparente."
+					</p>
+					<div class="testimonial-author">
+						<strong>Stefano Caiafa</strong>
+						<span>Vicepresidente de ILCA Uruguay</span>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<p class="testimonial-text">
+						"La protección que nos brinda La Roche-Posay es esencial para navegar 
+						largas horas bajo el sol uruguayo. Nos permite concentrarnos en rendir al máximo."
+					</p>
+					<div class="testimonial-author">
+						<strong>Mateo Vidal</strong>
+						<span>Presidente de ILCA Uruguay</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sponsor-benefits-section">
+			<h2>🎯 ¿Por qué Patrocinar ILCA Uruguay?</h2>
+			<div class="benefits-grid">
+				<div class="benefit-card">
+					<h3>🌟 Visibilidad Internacional</h3>
+					<p>Presencia en competencias mundiales, olimpíadas y eventos náuticos de élite.</p>
+				</div>
+				<div class="benefit-card">
+					<h3>👥 Conexión con la Comunidad</h3>
+					<p>Acceso a una comunidad apasionada de más de 200 navegantes activos.</p>
+				</div>
+				<div class="benefit-card">
+					<h3>📺 Cobertura Mediática</h3>
+					<p>Exposición en medios deportivos, redes sociales y eventos televisados.</p>
+				</div>
+				<div class="benefit-card">
+					<h3>🏆 Asociación con la Excelencia</h3>
+					<p>Vinculación con campeones mundiales y representantes olímpicos uruguayos.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="join-sponsors">
+			<h2>🤝 Únete a Nuestros Patrocinadores</h2>
+			<p>
+				¿Tu empresa quiere ser parte del futuro de la vela uruguaya? 
+				Ofrecemos diferentes niveles de patrocinio adaptados a tus objetivos comerciales.
+			</p>
+			<div class="contact-sponsors">
+				<a href="mailto:asociacion.uruguaya.ilca@gmail.com" class="btn-sponsor">
+					📧 Contactar para Patrocinio
+				</a>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.sponsors-content {
+		line-height: 1.6;
+	}
+
+	.intro {
+		font-size: 1.2em;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 2em;
+		padding: 1.5em;
+		background: #f8f9fa;
+		border-radius: 10px;
+		border-left: 4px solid #007bff;
+	}
+
+	.gratitude-section {
+		margin: 3em 0;
+		text-align: center;
+		padding: 2em;
+		background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+		color: white;
+		border-radius: 15px;
+	}
+
+	.gratitude-section h2 {
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+
+	.main-sponsors {
+		margin: 3em 0;
+	}
+
+	.main-sponsors h2 {
+		text-align: center;
+		font-size: 2.2em;
+		margin-bottom: 2em;
+		color: #333;
+	}
+
+	.sponsor-card {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+		margin: 2em 0;
+		padding: 2em;
+		background: white;
+		border-radius: 15px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		transition: transform 0.3s ease;
+	}
+
+	.sponsor-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.sponsor-card.premium {
+		border: 2px solid #ffd700;
+		background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+	}
+
+	.sponsor-logo {
+		flex-shrink: 0;
+		width: 200px;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: white;
+		border-radius: 10px;
+		padding: 1em;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	}
+
+	.sponsor-logo img {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+
+	.sponsor-info h3 {
+		font-size: 1.8em;
+		color: #007bff;
+		margin-bottom: 0.5em;
+	}
+
+	.sponsor-category {
+		font-weight: bold;
+		color: #ffd700;
+		font-size: 1.1em;
+		margin-bottom: 1em;
+	}
+
+	.sponsor-description {
+		margin-bottom: 1.5em;
+		color: #555;
+	}
+
+	.sponsor-benefits {
+		display: flex;
+		gap: 1em;
+		flex-wrap: wrap;
+	}
+
+	.benefit {
+		background: #e3f2fd;
+		color: #0066cc;
+		padding: 0.5em 1em;
+		border-radius: 20px;
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+
+	.partnership-impact {
+		margin: 4em 0;
+		text-align: center;
+	}
+
+	.partnership-impact h2 {
+		font-size: 2.2em;
+		margin-bottom: 2em;
+		color: #333;
+	}
+
+	.impact-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2em;
+		margin-top: 2em;
+	}
+
+	.impact-card {
+		background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+		color: white;
+		padding: 2em;
+		border-radius: 15px;
+		text-align: center;
+	}
+
+	.impact-number {
+		font-size: 3em;
+		font-weight: bold;
+		margin-bottom: 0.5em;
+	}
+
+	.impact-label {
+		font-size: 1.1em;
+		opacity: 0.9;
+	}
+
+	.testimonials {
+		margin: 4em 0;
+	}
+
+	.testimonials h2 {
+		text-align: center;
+		font-size: 2.2em;
+		margin-bottom: 2em;
+		color: #333;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2em;
+	}
+
+	.testimonial-card {
+		background: #f8f9fa;
+		padding: 2em;
+		border-radius: 15px;
+		border-left: 4px solid #007bff;
+	}
+
+	.testimonial-text {
+		font-style: italic;
+		margin-bottom: 1.5em;
+		font-size: 1.1em;
+		line-height: 1.6;
+	}
+
+	.testimonial-author strong {
+		color: #007bff;
+		display: block;
+		font-size: 1.1em;
+	}
+
+	.testimonial-author span {
+		color: #666;
+		font-size: 0.9em;
+	}
+
+	.sponsor-benefits-section {
+		margin: 4em 0;
+	}
+
+	.sponsor-benefits-section h2 {
+		text-align: center;
+		font-size: 2.2em;
+		margin-bottom: 2em;
+		color: #333;
+	}
+
+	.benefits-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2em;
+	}
+
+	.benefit-card {
+		background: white;
+		padding: 2em;
+		border-radius: 15px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+		text-align: center;
+		transition: transform 0.3s ease;
+	}
+
+	.benefit-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.benefit-card h3 {
+		color: #007bff;
+		margin-bottom: 1em;
+		font-size: 1.3em;
+	}
+
+	.join-sponsors {
+		background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+		color: white;
+		padding: 3em 2em;
+		border-radius: 15px;
+		text-align: center;
+		margin: 4em 0;
+	}
+
+	.join-sponsors h2 {
+		font-size: 2.2em;
+		margin-bottom: 1em;
+	}
+
+	.join-sponsors p {
+		font-size: 1.2em;
+		margin-bottom: 2em;
+		opacity: 0.9;
+	}
+
+	.contact-sponsors {
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn-sponsor, .btn-whatsapp {
+		padding: 1em 2em;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: transform 0.3s ease;
+		display: inline-block;
+	}
+
+	.btn-sponsor {
+		background: white;
+		color: #007bff;
+	}
+
+	.btn-whatsapp {
+		background: #25D366;
+		color: white;
+	}
+
+	.btn-sponsor:hover, .btn-whatsapp:hover {
+		transform: translateY(-2px);
+	}
+
+	/* Mobile Responsiveness */
+	@media (max-width: 768px) {
+		.sponsor-card {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.sponsor-logo {
+			width: 150px;
+			height: 100px;
+		}
+
+		.impact-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.benefits-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.contact-sponsors {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.impact-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.sponsor-benefits {
+			justify-content: center;
+		}
+	}
+</style>
