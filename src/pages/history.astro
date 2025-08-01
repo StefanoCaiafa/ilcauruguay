@@ -236,8 +236,82 @@ import Layout from '../layouts/BlogPost.astro';
 			grid-template-columns: 1fr;
 		}
 
+		.historical-blogs {
+			padding: 1.5em;
+		}
+
 		.blog-cards {
 			grid-template-columns: 1fr;
+			gap: 1em;
+			padding: 0 1em;
+		}
+
+		.blog-card {
+			max-width: 100%;
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.historical-blogs {
+			padding: 1em;
+		}
+
+		.blog-cards {
+			grid-template-columns: 1fr;
+			gap: 0.8em;
+			padding: 0 0.5em;
+		}
+
+		.blog-card {
+			padding: 1em;
+			max-width: 100%;
+		}
+
+		.blog-card h4 {
+			font-size: 1.1em;
+		}
+
+		.blog-card p {
+			font-size: 0.9em;
+			line-height: 1.4;
+		}
+
+		.blog-link {
+			padding: 0.5em 1em;
+			font-size: 0.9em;
+		}
+	}
+
+	@media (max-width: 375px) {
+		.historical-blogs {
+			padding: 0.8em;
+		}
+
+		.blog-cards {
+			grid-template-columns: 1fr;
+			gap: 0.8em;
+			padding: 0 0.3em;
+		}
+
+		.blog-card {
+			padding: 0.8em;
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.historical-blogs {
+			padding: 0.8em;
+		}
+
+		.blog-cards {
+			padding: 0 0.2em;
+		}
+
+		.blog-card {
+			padding: 0.8em;
 		}
 	}
 
@@ -290,13 +364,27 @@ import Layout from '../layouts/BlogPost.astro';
 		border-radius: 15px;
 		margin: 2em 0;
 		border-left: 4px solid #6c757d;
+		text-align: center;
+		box-sizing: border-box;
+		overflow: hidden;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.historical-blogs h3,
+	.historical-blogs > p {
+		text-align: center;
 	}
 
 	.blog-cards {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		gap: 1.5em;
 		margin: 1.5em 0;
+		max-width: 100%;
+		box-sizing: border-box;
+		justify-items: center;
+		padding: 0;
 	}
 
 	.blog-card {
@@ -305,6 +393,14 @@ import Layout from '../layouts/BlogPost.astro';
 		border-radius: 10px;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 		border-top: 3px solid #007bff;
+		text-align: left;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 350px;
+		height: fit-content;
+		margin: 0 auto;
 	}
 
 	.blog-card h4 {
