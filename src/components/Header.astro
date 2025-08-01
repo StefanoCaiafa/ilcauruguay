@@ -1,13 +1,14 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import Logo from '../assets/logo.png';
 ---
 
 <header>
 	<nav>
 		<h2>
 			<a href="/">
-				<img src="/src/assets/logo.png" alt="Logo" style="height: 1.5em; vertical-align: middle; margin-right: 0.5em;" />
+				<img src={Logo.src} alt="Logo" style="height: 1.5em; vertical-align: middle; margin-right: 0.5em;" />
 				{SITE_TITLE}
 			</a>
 		</h2>
